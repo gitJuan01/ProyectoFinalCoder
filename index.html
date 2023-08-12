@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoFinal</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Aca agrego las librerias de Sweet alert, Toastify y Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="centrar">Revisión de gastos</h1>
+    <form>
+    <div class="centrarBoton">
+    <button id="cargarJSON">Mostrar datos del año anterior</button> 
+    </div>   
+      <div class="centrar">
+        <p>Ingrese la fecha</p>
+        <input type="date" id="fecha" required>
+    </div>
+    <div class="centrar">
+        <p>Ingrese el tipo de gasto (sueldos, compras, etc) </p>
+        <input type="text" id="tipoGasto" required>
+    </div>
+    <div class="centrar">
+        <p>Ingrese aquí el monto de dicho gasto</p>
+        <input type="number" id="montoGasto" required>
+    </div>    
+        <br>
+        <div class="centrar">
+        <input type="submit" id="boton1" value="Cargar">
+        <button id="borrar">Borrar Datos</button>
+        </div>
+    </form>
+    <div class="resultado" id="resultado"></div>       <!-- Aca esta el spinner -->
+    <div class="spinner-border text-primary"  role="status" id="spinner" style="display: none;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <script src= "main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> <!-- Aca los scripts de toastify y bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

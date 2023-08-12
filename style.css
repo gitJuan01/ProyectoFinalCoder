@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.centrarBoton {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 20px;
+}
+
+input {
+  display: inline-block;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.resultado{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
